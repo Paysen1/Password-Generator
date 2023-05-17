@@ -1,7 +1,9 @@
 // Assignment Code
+var passwordLength = length
 var special=["!", "#" , "$" , "%" , "&" , "'" , "(" , ")" , "*" , "+" , "," , "-" , "." , "/" , ":" , ";" , "<" , "=" , ">" , "?" , "@" , "[" , "]" , "^" , "_" , "`" , "{" , "|" , "}" , "~" , ];
 var letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var numbers=["1","2","3","4","5","6","7","8","9"];
+var lowers=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
 function start(){
 var length = window.prompt("How long would you like your password?")
@@ -16,6 +18,11 @@ if (caps === true){
   console.log(caps)
   console.log(letters)
 }
+var lower = window.confirm("Would you like lowercase lettering?")
+if (lower === true){
+  console.log(lower)
+  console.log(lowers)
+}
 var num = window.confirm ("would you like numbers in your password?")
 if (num === true){
   console.log(num)
@@ -25,13 +32,15 @@ if (num === true){
 }
 start()
 
-function specialarray(){
-  special[0,1,2,3,4]
-}
 
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
+  for (var i = 0; i < passwordLength; i++) {
+    var randomNumber = special[Math.floor(special.length * math.random())];
+    document.write(randomNumber)
+   }
+
   
 }
 
@@ -43,6 +52,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
+writePassword();
 
 
 // Add event listener to generate button
