@@ -71,7 +71,7 @@ keyGen = {
         if(this.bLowers) {
             this.characters = this.characters.concat(this.lowers)
         }
-
+        //series of if statments that concatinate different arrays based on selection.
         while(!this.genSuccess){
             for (index = 0; index < this.passwordLength; index++) {
                 this.genPass += this.characters[Math.floor((Math.random()*this.characters.length))];
