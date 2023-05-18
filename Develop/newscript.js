@@ -55,6 +55,7 @@ keyGen = {
             }
             alert("Not possible, please put at least one keytype.")
         }
+        //infinate loop that breaks once at least 1 key is true
 
         this.characters = []
         this.characters = this.numbers.concat(this.special)
