@@ -30,6 +30,7 @@ keyGen = {
         this.bNumbers = true
         this.bLowers = true
         this.genSuccess = false
+        //reastablishing the variables so the loop can see them in the function
         while(!this.validLength){
             this.passwordLength = prompt("Enter a desired password length between 8 and 128")
             if (this.passwordLength <= 128 && this.passwordLength >= 8){
@@ -39,6 +40,7 @@ keyGen = {
                 alert("Please enter a number between 8 and 128")
             }
         }
+        //infinate loop that breaks once criteria is meet
 
         
 
