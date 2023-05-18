@@ -7,6 +7,10 @@ var lowers=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q",
 
 var length = window.prompt("How long would you like your password?/ 8-128")
   console.log(length);
+if (length < 8) {
+
+  
+}
 
 var specialC = window.confirm("Would you like special characters?")
 if (specialC === true){
