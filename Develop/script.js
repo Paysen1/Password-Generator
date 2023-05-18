@@ -42,11 +42,13 @@ const random = [
 
 
 function generatePassword(){
-  for (let index = 0; index < passwordLength.length; index++) {
-    const element = random[index];
-    element()
+  var password = '';
+  for (let index = 0; index < length; index++) {
+    const element = random[index % random.length];
+    password += element();
   }
-};
+  return password;
+}
   
 
 
@@ -56,7 +58,6 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
