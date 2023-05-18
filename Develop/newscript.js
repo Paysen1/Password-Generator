@@ -100,6 +100,7 @@ keyGen = {
             }
             this.genPass = ""
         }
+        //very large infinate loop that breaks once then correct length/keys are genorated within the #password id
         document.getElementById("password").value=this.genPass
-    }
+    }//adding genPass value to the id password if loop breaks
 }
